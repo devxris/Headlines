@@ -11,37 +11,14 @@ import UIKit
 
 class SourcesTableViewController : UITableViewController {
     
-    private var sources :[Source] = [Source]()
+	private var sources = [Source]() { didSet { tableView.reloadData() } }
     
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        populateSources()
-    
+		WebService.shared.loadSources { (sources) in self.sources = sources }
     }
-    
-    private func populateSources() {
-        
-        let sourceURL = URL(string :"https://newsapi.org/v2/sources?apiKey=0cf790498275413a9247f8b94b3843fd")!
-        
-        URLSession.shared.dataTask(with: sourceURL) { data, _, _ in
-            
-            if let data = data {
-                
-                let json = try! JSONSerialization.jsonObject(with: data, options: [])
-                let dictionary = json as! [String:Any]
-                let sourcesDictionary = dictionary["sources"] as! [[String:Any]]
-                
-                self.sources = sourcesDictionary.flatMap(Source.init)
-                
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
-                }
-            }
-            
-            }.resume()
-    }
-    
+	
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.sources.count
     }
