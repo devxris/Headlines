@@ -8,19 +8,13 @@
 
 import Foundation
 
-class Headline {
+struct Top: Codable {
+	
+	var articles: [Headline]?
+}
 
-    var title :String!
-    var description :String!
-
-    init?(dictionary :[String:Any]) {
-
-        guard let title = dictionary["title"] as? String,
-            let description = dictionary["description"] as? String else {
-                return nil
-        }
-
-        self.title = title
-        self.description = description
-    }
+struct Headline: Codable {
+	
+	var title: String
+	var description: String
 }

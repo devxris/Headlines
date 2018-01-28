@@ -42,9 +42,7 @@ class SourcesTableViewController : UITableViewController {
         
         guard let headlinesTVC = segue.destination as? HeadlinesTableViewController else { return }
 		guard let indexPath = tableView.indexPathForSelectedRow else { return }
-        let source = sourcesTableViewModel.source(at: indexPath)
-        
-        // headlinesTVC.source = source
-		
+        let sourceViewModel = sourcesTableViewModel.source(at: indexPath)
+        headlinesTVC.sourceViewModel = sourceViewModel		
     }
 }

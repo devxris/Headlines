@@ -18,4 +18,10 @@ struct Source: Codable {
 	var id: String
 	var name: String
 	var description: String
+	
+	init(sourceViewModel: SourceViewModel) {
+		id = sourceViewModel.id
+		name = sourceViewModel.name
+		description = sourceViewModel.description
+	}
 }

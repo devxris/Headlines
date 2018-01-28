@@ -20,6 +20,8 @@
 		458A3B57201E0FF5002666F8 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458A3B56201E0FF5002666F8 /* WebService.swift */; };
 		458A3B5A201E1412002666F8 /* SourcesTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458A3B59201E1412002666F8 /* SourcesTableViewModel.swift */; };
 		458A3B5C201E143F002666F8 /* SourceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458A3B5B201E143F002666F8 /* SourceViewModel.swift */; };
+		458A3B5E201E1B2B002666F8 /* HeadlineTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458A3B5D201E1B2B002666F8 /* HeadlineTableViewModel.swift */; };
+		458A3B60201E1B5E002666F8 /* HeadlineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458A3B5F201E1B5E002666F8 /* HeadlineViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		458A3B56201E0FF5002666F8 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		458A3B59201E1412002666F8 /* SourcesTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcesTableViewModel.swift; sourceTree = "<group>"; };
 		458A3B5B201E143F002666F8 /* SourceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceViewModel.swift; sourceTree = "<group>"; };
+		458A3B5D201E1B2B002666F8 /* HeadlineTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlineTableViewModel.swift; sourceTree = "<group>"; };
+		458A3B5F201E1B5E002666F8 /* HeadlineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlineViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,8 @@
 			children = (
 				458A3B59201E1412002666F8 /* SourcesTableViewModel.swift */,
 				458A3B5B201E143F002666F8 /* SourceViewModel.swift */,
+				458A3B5D201E1B2B002666F8 /* HeadlineTableViewModel.swift */,
+				458A3B5F201E1B5E002666F8 /* HeadlineViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -208,9 +214,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				458A3B5E201E1B2B002666F8 /* HeadlineTableViewModel.swift in Sources */,
 				4540CDE7201E0D2F0095D10B /* HeadlineTableViewCell.swift in Sources */,
 				4540CDEB201E0D460095D10B /* HeadlinesTableViewController.swift in Sources */,
 				458A3B57201E0FF5002666F8 /* WebService.swift in Sources */,
+				458A3B60201E1B5E002666F8 /* HeadlineViewModel.swift in Sources */,
 				458A3B5A201E1412002666F8 /* SourcesTableViewModel.swift in Sources */,
 				4540CDEC201E0D460095D10B /* SourcesTableViewController.swift in Sources */,
 				4540CDE8201E0D2F0095D10B /* SourceTableViewCell.swift in Sources */,
