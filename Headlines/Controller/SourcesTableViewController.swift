@@ -14,28 +14,23 @@ class SourcesTableViewController : UITableViewController {
 	// MARK: ViewModels
     
 	private var sourcesTableViewModel: SourcesTableViewModel!
+	private var dataSource: TableViewDataSource<SourceTableViewCell, SourceViewModel>!
 	
 	// MARK: ViewController Life Cycle
 	
     override func viewDidLoad() {
         super.viewDidLoad()
-		sourcesTableViewModel = SourcesTableViewModel { self.tableView.reloadData() }
+		
+		sourcesTableViewModel = SourcesTableViewModel {
+			self.dataSource = TableViewDataSource(withIdentifier: "Cell", viewModels: self.sourcesTableViewModel.sourceViewModels) { (cell, soureViewModel) in
+				cell.titleLabel.text = soureViewModel.name
+				cell.descriptionLabel.text = soureViewModel.description
+			}
+			self.tableView.dataSource = self.dataSource
+			self.tableView.reloadData()
+		}		
     }
-	
-	// MARK: UITableViewDataSource
-	
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return sourcesTableViewModel.sourceViewModels.count
-    }
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! SourceTableViewCell
-        let source = sourcesTableViewModel.source(at: indexPath)
-        cell.titleLabel.text = source.name
-        cell.descriptionLabel.text = source.description
-        return cell
-    }
-	
+		
 	// MARK: Navigations
 	
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

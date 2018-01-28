@@ -22,6 +22,7 @@
 		458A3B5C201E143F002666F8 /* SourceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458A3B5B201E143F002666F8 /* SourceViewModel.swift */; };
 		458A3B5E201E1B2B002666F8 /* HeadlineTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458A3B5D201E1B2B002666F8 /* HeadlineTableViewModel.swift */; };
 		458A3B60201E1B5E002666F8 /* HeadlineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458A3B5F201E1B5E002666F8 /* HeadlineViewModel.swift */; };
+		458A3B63201E1F60002666F8 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458A3B62201E1F60002666F8 /* TableViewDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		458A3B5B201E143F002666F8 /* SourceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceViewModel.swift; sourceTree = "<group>"; };
 		458A3B5D201E1B2B002666F8 /* HeadlineTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlineTableViewModel.swift; sourceTree = "<group>"; };
 		458A3B5F201E1B5E002666F8 /* HeadlineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlineViewModel.swift; sourceTree = "<group>"; };
+		458A3B62201E1F60002666F8 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				4540CDE0201E0D0E0095D10B /* Model */,
 				4540CDDE201E0CAF0095D10B /* View */,
 				458A3B58201E13E7002666F8 /* ViewModel */,
+				458A3B61201E1F43002666F8 /* DataSource */,
 				4540CDDF201E0CB50095D10B /* Controller */,
 			);
 			path = Headlines;
@@ -140,6 +143,14 @@
 				458A3B5F201E1B5E002666F8 /* HeadlineViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		458A3B61201E1F43002666F8 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				458A3B62201E1F60002666F8 /* TableViewDataSource.swift */,
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +235,7 @@
 				4540CDE8201E0D2F0095D10B /* SourceTableViewCell.swift in Sources */,
 				4540CDCC201E0C990095D10B /* AppDelegate.swift in Sources */,
 				458A3B5C201E143F002666F8 /* SourceViewModel.swift in Sources */,
+				458A3B63201E1F60002666F8 /* TableViewDataSource.swift in Sources */,
 				4540CDE3201E0D1E0095D10B /* Source.swift in Sources */,
 				4540CDE4201E0D1E0095D10B /* Headline.swift in Sources */,
 			);
