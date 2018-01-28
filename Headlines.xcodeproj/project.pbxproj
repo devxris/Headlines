@@ -18,6 +18,8 @@
 		4540CDEB201E0D460095D10B /* HeadlinesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4540CDE9201E0D460095D10B /* HeadlinesTableViewController.swift */; };
 		4540CDEC201E0D460095D10B /* SourcesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4540CDEA201E0D460095D10B /* SourcesTableViewController.swift */; };
 		458A3B57201E0FF5002666F8 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458A3B56201E0FF5002666F8 /* WebService.swift */; };
+		458A3B5A201E1412002666F8 /* SourcesTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458A3B59201E1412002666F8 /* SourcesTableViewModel.swift */; };
+		458A3B5C201E143F002666F8 /* SourceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458A3B5B201E143F002666F8 /* SourceViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		4540CDE9201E0D460095D10B /* HeadlinesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadlinesTableViewController.swift; sourceTree = "<group>"; };
 		4540CDEA201E0D460095D10B /* SourcesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourcesTableViewController.swift; sourceTree = "<group>"; };
 		458A3B56201E0FF5002666F8 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		458A3B59201E1412002666F8 /* SourcesTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcesTableViewModel.swift; sourceTree = "<group>"; };
+		458A3B5B201E143F002666F8 /* SourceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,7 @@
 				458A3B55201E0FE5002666F8 /* Services */,
 				4540CDE0201E0D0E0095D10B /* Model */,
 				4540CDDE201E0CAF0095D10B /* View */,
+				458A3B58201E13E7002666F8 /* ViewModel */,
 				4540CDDF201E0CB50095D10B /* Controller */,
 			);
 			path = Headlines;
@@ -120,6 +125,15 @@
 				458A3B56201E0FF5002666F8 /* WebService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		458A3B58201E13E7002666F8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				458A3B59201E1412002666F8 /* SourcesTableViewModel.swift */,
+				458A3B5B201E143F002666F8 /* SourceViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,9 +211,11 @@
 				4540CDE7201E0D2F0095D10B /* HeadlineTableViewCell.swift in Sources */,
 				4540CDEB201E0D460095D10B /* HeadlinesTableViewController.swift in Sources */,
 				458A3B57201E0FF5002666F8 /* WebService.swift in Sources */,
+				458A3B5A201E1412002666F8 /* SourcesTableViewModel.swift in Sources */,
 				4540CDEC201E0D460095D10B /* SourcesTableViewController.swift in Sources */,
 				4540CDE8201E0D2F0095D10B /* SourceTableViewCell.swift in Sources */,
 				4540CDCC201E0C990095D10B /* AppDelegate.swift in Sources */,
+				458A3B5C201E143F002666F8 /* SourceViewModel.swift in Sources */,
 				4540CDE3201E0D1E0095D10B /* Source.swift in Sources */,
 				4540CDE4201E0D1E0095D10B /* Headline.swift in Sources */,
 			);
